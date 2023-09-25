@@ -6,12 +6,15 @@
 /*   By: mtrembla <mtrembla@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 12:42:29 by mtrembla          #+#    #+#             */
-/*   Updated: 2023/07/20 12:35:03 by mtrembla         ###   ########.fr       */
+/*   Updated: 2023/09/23 14:47:42 by mtrembla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK_HPP
 # define PHONEBOOK_HPP
+
+#include <iostream>
+#include <iomanip>
 
 class Contact{
 

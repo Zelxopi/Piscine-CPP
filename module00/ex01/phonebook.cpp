@@ -6,11 +6,10 @@
 /*   By: mtrembla <mtrembla@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 14:50:29 by mtrembla          #+#    #+#             */
-/*   Updated: 2023/07/20 12:36:49 by mtrembla         ###   ########.fr       */
+/*   Updated: 2023/09/23 14:47:53 by mtrembla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "phonebook.hpp"
 
 void	Contact::setFirstName(std::string str){

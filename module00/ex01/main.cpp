@@ -6,12 +6,10 @@
 /*   By: mtrembla <mtrembla@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 12:49:03 by mtrembla          #+#    #+#             */
-/*   Updated: 2023/09/23 14:13:00 by mtrembla         ###   ########.fr       */
+/*   Updated: 2023/09/23 14:47:51 by mtrembla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <iomanip>
 #include "phonebook.hpp"
 
 int alnum_string(std::string info)
