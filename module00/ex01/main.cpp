@@ -6,7 +6,7 @@
 /*   By: mtrembla <mtrembla@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 12:49:03 by mtrembla          #+#    #+#             */
-/*   Updated: 2023/09/25 14:37:29 by mtrembla         ###   ########.fr       */
+/*   Updated: 2023/09/25 14:50:49 by mtrembla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ std::string cut(std::string info)
 
 int valid_index(std::string info)
 {
-	if (info.size() == 1 && isdigit(info[0]))
+	if (info.size() == 1 && isdigit(info[0]) && std::stoi(info) < 9 && std::stoi(info) > 0)
 		return(1);
 	return(0);
 }
