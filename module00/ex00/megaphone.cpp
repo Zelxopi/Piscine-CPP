@@ -6,7 +6,7 @@
 /*   By: mtrembla <mtrembla@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 12:25:03 by mtrembla          #+#    #+#             */
-/*   Updated: 2023/02/09 12:25:06 by mtrembla         ###   ########.fr       */
+/*   Updated: 2023/09/25 14:35:05 by mtrembla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int main(int argc, char **argv)
     char c;
     
 	for(int i = 1; argv[i]; i++) {
-    	for (int j = 0; j < strlen(argv[i]); j++) {
+    	for (size_t j = 0; j < strlen(argv[i]); j++) {
 			c = toupper(argv[i][j]);
 			std::cout << c;
 		}

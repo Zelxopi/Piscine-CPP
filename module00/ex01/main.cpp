@@ -6,7 +6,7 @@
 /*   By: mtrembla <mtrembla@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 12:49:03 by mtrembla          #+#    #+#             */
-/*   Updated: 2023/09/23 14:47:51 by mtrembla         ###   ########.fr       */
+/*   Updated: 2023/09/25 14:37:29 by mtrembla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	add(Contact *contact)
 	std::string	input;
 	static int i = 0;
 
-	if (i == 9)
+	if (i == 8)
 		i = 0;
 	std::cout << "FIRST NAME: ";
 	getline(std::cin, input);
@@ -69,7 +69,6 @@ int valid_index(std::string info)
 {
 	if (info.size() == 1 && isdigit(info[0]))
 		return(1);
-	std::cout << "invalid" << std::endl;
 	return(0);
 }
 
@@ -78,7 +77,7 @@ void	search(Contact *contact)
 	int i = 0;
 	std::string	input;
 
-	while(!contact[i].getFirstName().empty())
+	while(!contact[i].getFirstName().empty() && i < 8)
 	{
 		std::cout << std::setw(10) << i + 1 << "|"
 			<< std::setw(10) << cut(contact[i].getFirstName()) << "|"
